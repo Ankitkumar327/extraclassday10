@@ -1,0 +1,19 @@
+.responsive {
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  height: 100px;
+  width: 200px;
+  background-color: yellow;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .responsive {
+    flex-direction: column;
+  }
+  .box {
+    background-color: red;
+  }
+}
